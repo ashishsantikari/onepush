@@ -1,0 +1,40 @@
+<html ng-app="app">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="app/style.css">   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-route.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.1/angular-materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
+
+<script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="app/appservice.js"></script>   
+</head>
+<body class="green lighten-3">
+<div class="navbar-fixed">
+        <nav class="green">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo left">One Push</a>                
+                <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+                <a class="hide-on-med-and-up right">{{count}} Websites!</a>&nbsp;
+                <ul id="nav-mobile" class="right hide-on-med-and-down">  
+                    <li><a>{{count}} Websites Found!</a></li>
+                    <li><a href="#add"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Add Profile</a></li>
+                    <li><input type="search" placeholder="Search" ng-model="filterItems"></li>
+                </ul>
+                <!-- side nav on mobile-->
+                <ul id="mobile-demo" class="side-nav green lighten-3">                      
+                    <li><a href="#add"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Add Profile</a></li>
+                    <li><input type="search" placeholder="Search" ng-model="filterItems"></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+<div class="container" ng-view></div>
+</body>
+</html>

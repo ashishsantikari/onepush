@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col s12 left-align">
+        <h3>Add New Portfolio</h3> </div>
+    <form name="newPortfolio" novalidate>
+        <div class="col s12 m7 input-field">
+            <input type="text" ng-model="f.title" class="validate" name="title" required>
+            <label for="title">Title</label>
+        </div>
+        <div class="col s12 m7 input-field">
+            <input type="url" ng-model="f.url" class="validate" name="url" required>
+            <label for="url">URL</label>
+        </div>
+        <div class="col s12 m7 input-field">
+            <input type="text" ng-model="f.tag" name="tag" class="validate" required>
+            <label for="tag">Tag</label>
+        </div>
+        <div class="col s12"> <a class="waves-effect waves-light btn" ng-click="submitRequest()" ng-disabled="newPortfolio.$invalid || newPortfolio.$pristine"><i class="material-icons left">cloud</i>Save</a> &nbsp;&nbsp;<a class="waves-effect waves-light btn" href="#home">Go to Home</a> </div>
+    </form>
+    
+    <div modal data-target="demoModal" ready="onReady" complete="onComplete" open="modalOpen" hide></div>
+    
+    <div id="demoModal" class="modal">
+        <div class="modal-content">
+            <h4>Notification</h4>
+            <p>{{message}}</p>
+        </div>
+        <div class="modal-footer"></div>
+    </div>
+</div>

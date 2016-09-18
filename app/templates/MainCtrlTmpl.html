@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col s12">
+        <user-details data="user" ng-repeat="user in filteredList"></user-details>
+    </div>
+</div>
+<div class="row">
+    <div class="col s12 center-align">
+        <pagination page="page.default" page-size="page.size" total="page.total" show-prev-next="true" use-simple-prev-next="false" dots=".." hide-if-empty="true" adjacent="1" scroll-top="false" pagination-action="changePage(page)" /> </div>
+</div>

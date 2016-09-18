@@ -1,0 +1,9 @@
+<div class="col s12 m3">
+    <div class="card small">
+        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" ng-src="{{data.favicon_image}}"> </div>
+        <div class="card-content"> <span class="card-title truncate activator grey-text text-darken-4">{{data.title}}<i class="material-icons right">more_vert</i></span><span ng-bind="getLikes(data.id)"></span>&nbsp;<i class="material-icons like-align-bottom">thumb_up</i></div>
+        <div class="card-reveal"><span class="card-title grey-text text-darken-4">{{data.title}}<i class="material-icons right">close</i></span>
+            <p>Portfolio Link<br/><a ng-href="{{data.url_address}}" target="_blank">{{data.url_address}}</a></p>
+            <p>Tags : {{data.tag}}</p> <a href="" ng-click="addLikes(data.id)" ng-disabled="clicked">Like It! <i class="material-icons like-align-bottom" ng-show="clicked">thumb_up</i></a> </div>
+    </div>
+</div>
