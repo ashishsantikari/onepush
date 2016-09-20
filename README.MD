@@ -1,6 +1,3 @@
-"# onepush" 
-    # To run , please fire up a http server, preferably http-server.
-    # Eg 
-    # npm install http-server
-    # http-server
-    # Project hosted on https://github.com/ashishsantikari/onepush
+The OpenShift `nodejs` cartridge documentation can be found at:
+
+http://openshift.github.io/documentation/oo_cartridge_guide.html#nodejs
